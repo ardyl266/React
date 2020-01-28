@@ -1,0 +1,8 @@
+C:\Users\Ardy_L266\Desktop\Mitrais\MitraisRepo\obj\Debug\netcoreapp3.1\MitraisRepo.csprojAssemblyReference.cache
+C:\Users\Ardy_L266\Desktop\Mitrais\MitraisRepo\obj\Debug\netcoreapp3.1\MitraisRepo.AssemblyInfoInputs.cache
+C:\Users\Ardy_L266\Desktop\Mitrais\MitraisRepo\obj\Debug\netcoreapp3.1\MitraisRepo.AssemblyInfo.cs
+C:\Users\Ardy_L266\Desktop\Mitrais\MitraisRepo\bin\Debug\netcoreapp3.1\MitraisRepo.deps.json
+C:\Users\Ardy_L266\Desktop\Mitrais\MitraisRepo\bin\Debug\netcoreapp3.1\MitraisRepo.dll
+C:\Users\Ardy_L266\Desktop\Mitrais\MitraisRepo\bin\Debug\netcoreapp3.1\MitraisRepo.pdb
+C:\Users\Ardy_L266\Desktop\Mitrais\MitraisRepo\obj\Debug\netcoreapp3.1\MitraisRepo.dll
+C:\Users\Ardy_L266\Desktop\Mitrais\MitraisRepo\obj\Debug\netcoreapp3.1\MitraisRepo.pdb
