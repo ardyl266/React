@@ -45,6 +45,37 @@ namespace MitraisRepo.Interface
                 throw new Exception(ex.Message.ToString());
             }
         }
+        
+        public virtual T FindByCondition(string where, params object[] args)
+        {
+            try
+            {
+                string query = "";
+                if (where.ToLower().Contains("select"))
+                    query = where;
+                else
+                    query = "select * from [" + tName + "] " + where;
+
+                return connection.SingleOrDefault<T>(query, args);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message.ToString());
+            }
+        }
+
+        public virtual List<T> DoSqlQuery(string query, params object[] args)
+        {
+            try
+            {                              
+
+                return connection.Fetch<T>(query, args);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message.ToString());
+            }
+        }
 
         public int Insert(string primaryKeyName, T entity)
         {

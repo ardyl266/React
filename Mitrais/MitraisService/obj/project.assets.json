@@ -1370,11 +1370,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ardy_L266\\Desktop\\Mitrais\\MitraisService\\MitraisService.csproj",
+      "projectUniqueName": "C:\\Users\\Ardy_L266\\Desktop\\React\\Mitrais\\MitraisService\\MitraisService.csproj",
       "projectName": "MitraisService",
-      "projectPath": "C:\\Users\\Ardy_L266\\Desktop\\Mitrais\\MitraisService\\MitraisService.csproj",
+      "projectPath": "C:\\Users\\Ardy_L266\\Desktop\\React\\Mitrais\\MitraisService\\MitraisService.csproj",
       "packagesPath": "C:\\Users\\Ardy_L266\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ardy_L266\\Desktop\\Mitrais\\MitraisService\\obj\\",
+      "outputPath": "C:\\Users\\Ardy_L266\\Desktop\\React\\Mitrais\\MitraisService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ardy_L266\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1390,8 +1390,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Ardy_L266\\Desktop\\Mitrais\\MitraisRepo\\MitraisRepo.csproj": {
-              "projectPath": "C:\\Users\\Ardy_L266\\Desktop\\Mitrais\\MitraisRepo\\MitraisRepo.csproj"
+            "C:\\Users\\Ardy_L266\\Desktop\\React\\Mitrais\\MitraisRepo\\MitraisRepo.csproj": {
+              "projectPath": "C:\\Users\\Ardy_L266\\Desktop\\React\\Mitrais\\MitraisRepo\\MitraisRepo.csproj"
             }
           }
         }

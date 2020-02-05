@@ -15,8 +15,10 @@ namespace MitraisRepo.Interface
         int Count(string where, params object[] args);
 
         O FindByCondition<O>(string where, params object[] args);
+        T FindByCondition(string where, params object[] args);
 
         List<T> FindAllByCondition (string where, params object[] args);
+        List<T> DoSqlQuery (string query, params object[] args);
 
         // List<O> FindAllByCondition<O> (string where, params object[] args);
 

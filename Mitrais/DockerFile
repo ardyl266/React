@@ -1,0 +1,54 @@
+# FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
+# WORKDIR /app
+
+# # Copy csproj and restore as distinct layers
+# COPY MitraisRepo/*.csproj ./MitraisRepo/
+# COPY MitraisService/*.csproj ./MitraisService/
+# COPY MitraisWeb/*.csproj ./MitraisWeb/
+# RUN dotnet restore 
+
+# # Copy everything else and build
+# COPY . .
+# RUN dotnet publish -c Release -o out
+
+# # Build runtime image
+# FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
+# WORKDIR /app
+# EXPOSE 80
+# COPY --from=build-env /app/out .
+# ENTRYPOINT ["dotnet", "MitraisWeb.dll"]
+
+
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS builder
+WORKDIR /source
+
+RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
+RUN apt-get install -y nodejs
+
+COPY MitraisRepo/*.csproj ./MitraisRepo/
+RUN dotnet restore "MitraisRepo/MitraisRepo.csproj"
+COPY MitraisService/*.csproj ./MitraisService/
+RUN dotnet restore "MitraisService/MitraisService.csproj"
+COPY MitraisWeb/*.csproj ./MitraisWeb/
+RUN dotnet restore "MitraisWeb/MitraisWeb.csproj"
+
+
+COPY ./ ./
+
+# RUN npm install --global yarn
+
+RUN npm i react-bootstrap --save
+RUN npm i formik --save
+RUN npm i yup --save
+RUN npm i react-material-iconic-font --save
+RUN npm i axios --save
+RUN npm i npoco --save
+RUN npm i react-toastify --save
+
+RUN dotnet publish "MitraisWeb/MitraisWeb.csproj" --output "./dist" --configuration Release --no-restore
+
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
+WORKDIR /app
+COPY --from=builder /source/dist .
+EXPOSE 80
+ENTRYPOINT ["dotnet", "MitraisWeb.dll"]

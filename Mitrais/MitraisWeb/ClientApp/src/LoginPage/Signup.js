@@ -86,16 +86,19 @@ import axios from 'axios';
                                 data : values,
                                 method : "POST",            
                             }).then(res => {                           
-                                
-                                toast.success("Successfully create new user",{
+                                console.log("Res: ", res);
+                                toast.success("Successfully creating new user",{
                                 autoClose: 2000,
                                 draggable: false,                            
                                 });
                                 
-                                this.props.history.push('/');                                                                
-                                
-                                                                                       
-                            })                            
+                                // this.props.history.push('/');                                                                                                  
+                            }).catch(error => {                                
+                                toast.error("Failed creating new user",{
+                                    autoClose: 2000,
+                                    draggable: false,                            
+                                    });
+                            });                            
                           }}                     
                         initialValues={this.state}>
                         {({ handleSubmit,handleChange,handleBlur,values,touched,isValid,errors, }) => (
@@ -136,6 +139,8 @@ import axios from 'axios';
                     <div className="signup-image">
                         <figure><img src={signup_image} alt="sign up" /></figure>
                         <Link to = "/">I am already member</Link>
+                        <br />
+                        {/* <Link to = "/fetch">Fetch Data</Link> */}
                     </div>
                 </div>
             </Container>

@@ -9,3 +9,14 @@ C:\Users\Ardy_L266\Desktop\Mitrais\MitraisService\obj\Debug\netcoreapp3.1\Mitrai
 C:\Users\Ardy_L266\Desktop\Mitrais\MitraisService\obj\Debug\netcoreapp3.1\MitraisService.csproj.CopyComplete
 C:\Users\Ardy_L266\Desktop\Mitrais\MitraisService\obj\Debug\netcoreapp3.1\MitraisService.dll
 C:\Users\Ardy_L266\Desktop\Mitrais\MitraisService\obj\Debug\netcoreapp3.1\MitraisService.pdb
+C:\Users\Ardy_L266\Desktop\React\Mitrais\MitraisService\bin\Debug\netcoreapp3.1\MitraisService.deps.json
+C:\Users\Ardy_L266\Desktop\React\Mitrais\MitraisService\bin\Debug\netcoreapp3.1\MitraisService.dll
+C:\Users\Ardy_L266\Desktop\React\Mitrais\MitraisService\bin\Debug\netcoreapp3.1\MitraisService.pdb
+C:\Users\Ardy_L266\Desktop\React\Mitrais\MitraisService\bin\Debug\netcoreapp3.1\MitraisRepo.dll
+C:\Users\Ardy_L266\Desktop\React\Mitrais\MitraisService\bin\Debug\netcoreapp3.1\MitraisRepo.pdb
+C:\Users\Ardy_L266\Desktop\React\Mitrais\MitraisService\obj\Debug\netcoreapp3.1\MitraisService.csprojAssemblyReference.cache
+C:\Users\Ardy_L266\Desktop\React\Mitrais\MitraisService\obj\Debug\netcoreapp3.1\MitraisService.AssemblyInfoInputs.cache
+C:\Users\Ardy_L266\Desktop\React\Mitrais\MitraisService\obj\Debug\netcoreapp3.1\MitraisService.AssemblyInfo.cs
+C:\Users\Ardy_L266\Desktop\React\Mitrais\MitraisService\obj\Debug\netcoreapp3.1\MitraisService.csproj.CopyComplete
+C:\Users\Ardy_L266\Desktop\React\Mitrais\MitraisService\obj\Debug\netcoreapp3.1\MitraisService.dll
+C:\Users\Ardy_L266\Desktop\React\Mitrais\MitraisService\obj\Debug\netcoreapp3.1\MitraisService.pdb

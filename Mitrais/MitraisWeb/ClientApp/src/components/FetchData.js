@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavMenu } from './NavMenu';
 
 export class FetchData extends Component {
   static displayName = FetchData.name;
@@ -14,6 +15,7 @@ export class FetchData extends Component {
 
   static renderForecastsTable(forecasts) {
     return (
+      
       <table className='table table-striped' aria-labelledby="tabelLabel">
         <thead>
           <tr>
@@ -52,7 +54,11 @@ export class FetchData extends Component {
   }
 
   async populateWeatherData() {
-    const response = await fetch('weatherforecast');
+      const response = await fetch('weatherforecast', {
+          headers: {
+              'Authorization': localStorage.getItem('token')
+          }
+      });    
     const data = await response.json();
     this.setState({ forecasts: data, loading: false });
   }

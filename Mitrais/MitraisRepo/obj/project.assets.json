@@ -1352,11 +1352,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ardy_L266\\Desktop\\Mitrais\\MitraisRepo\\MitraisRepo.csproj",
+      "projectUniqueName": "c:\\Users\\Ardy_L266\\Desktop\\React\\Mitrais\\MitraisRepo\\MitraisRepo.csproj",
       "projectName": "MitraisRepo",
-      "projectPath": "C:\\Users\\Ardy_L266\\Desktop\\Mitrais\\MitraisRepo\\MitraisRepo.csproj",
+      "projectPath": "c:\\Users\\Ardy_L266\\Desktop\\React\\Mitrais\\MitraisRepo\\MitraisRepo.csproj",
       "packagesPath": "C:\\Users\\Ardy_L266\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ardy_L266\\Desktop\\Mitrais\\MitraisRepo\\obj\\",
+      "outputPath": "c:\\Users\\Ardy_L266\\Desktop\\React\\Mitrais\\MitraisRepo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ardy_L266\\AppData\\Roaming\\NuGet\\NuGet.Config",
