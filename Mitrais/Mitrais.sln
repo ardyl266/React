@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MitraisWeb", "MitraisWeb\MitraisWeb.csproj", "{0C9DB067-D844-4C16-B9F9-47CD79CFBF74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MitraisWeb", "MitraisWeb\MitraisWeb.csproj", "{0C9DB067-D844-4C16-B9F9-47CD79CFBF74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MitraisRepo", "MitraisRepo\MitraisRepo.csproj", "{340C4729-21BC-448B-B9FB-8470033C7D3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MitraisRepo", "MitraisRepo\MitraisRepo.csproj", "{340C4729-21BC-448B-B9FB-8470033C7D3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MitraisService", "MitraisService\MitraisService.csproj", "{9C54CE0A-2C61-4FDE-A634-098B99575968}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MitraisService", "MitraisService\MitraisService.csproj", "{9C54CE0A-2C61-4FDE-A634-098B99575968}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest", "NUnitTest\NUnitTest.csproj", "{5E8DFAC4-8596-4E2B-89E4-EF563BDF9DBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,9 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0C9DB067-D844-4C16-B9F9-47CD79CFBF74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -58,5 +57,23 @@ Global
 		{9C54CE0A-2C61-4FDE-A634-098B99575968}.Release|x64.Build.0 = Release|Any CPU
 		{9C54CE0A-2C61-4FDE-A634-098B99575968}.Release|x86.ActiveCfg = Release|Any CPU
 		{9C54CE0A-2C61-4FDE-A634-098B99575968}.Release|x86.Build.0 = Release|Any CPU
+		{5E8DFAC4-8596-4E2B-89E4-EF563BDF9DBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8DFAC4-8596-4E2B-89E4-EF563BDF9DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8DFAC4-8596-4E2B-89E4-EF563BDF9DBB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5E8DFAC4-8596-4E2B-89E4-EF563BDF9DBB}.Debug|x64.Build.0 = Debug|Any CPU
+		{5E8DFAC4-8596-4E2B-89E4-EF563BDF9DBB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5E8DFAC4-8596-4E2B-89E4-EF563BDF9DBB}.Debug|x86.Build.0 = Debug|Any CPU
+		{5E8DFAC4-8596-4E2B-89E4-EF563BDF9DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8DFAC4-8596-4E2B-89E4-EF563BDF9DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E8DFAC4-8596-4E2B-89E4-EF563BDF9DBB}.Release|x64.ActiveCfg = Release|Any CPU
+		{5E8DFAC4-8596-4E2B-89E4-EF563BDF9DBB}.Release|x64.Build.0 = Release|Any CPU
+		{5E8DFAC4-8596-4E2B-89E4-EF563BDF9DBB}.Release|x86.ActiveCfg = Release|Any CPU
+		{5E8DFAC4-8596-4E2B-89E4-EF563BDF9DBB}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9936108E-5B4C-479B-A371-F8CCDAD3BCF1}
 	EndGlobalSection
 EndGlobal

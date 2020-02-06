@@ -18,7 +18,13 @@ namespace MitraisService
             this.user_repo = user_repo;
             this.ur_repo = ur_repo;
             this.role_repo = role_repo;
-        }    
+        }
+
+        public UserService(IRepository<Users> user_repo)
+        {
+            this.user_repo = user_repo;            
+        }
+
         public int AddUser(Users user)
         {
             try{

@@ -29,6 +29,11 @@ namespace MitraisWeb.Controllers
             this._config = _config;
         }
 
+        public UserController(IUserService user_service)
+        {
+            this.user_service = user_service;            
+        }
+
         [HttpPost]  
         [Route("api/User")]  
         public IActionResult AddUser([FromBody]Users User)  
@@ -52,8 +57,8 @@ namespace MitraisWeb.Controllers
         [HttpPost]  
         [Route("api/Authenticate")]
         public IActionResult Login([FromBody]Users login)  
-        {  
-            IActionResult response = Unauthorized();  
+        {
+            IActionResult response = NotFound();
             var user = user_service.AuthenticateUser(login);  
   
             if (user != null)  
@@ -66,7 +71,8 @@ namespace MitraisWeb.Controllers
         }        
 
         private string GenerateJSONWebTokenAsync(Users userInfo)  
-        {  
+        {
+            String jwt = _config["Jwt:Key"];
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));  
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);  
 
